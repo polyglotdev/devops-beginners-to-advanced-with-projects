@@ -14,6 +14,7 @@
     - [Commands and File System](#commands-and-file-system)
     - [Where things live on the filesystem](#where-things-live-on-the-filesystem)
     - [VIM Editor](#vim-editor)
+      - [Modes](#modes)
     - [Installing from a URL](#installing-from-a-url)
 
 ## What is DevOps?
@@ -103,6 +104,13 @@ Linus Torvalds released the Linux kernel in 1991. He developed the Linux kernel 
 - `:set noignorecase`: Do not ignore case when searching
 - `:set incsearch`: Show search results incrementally
 
+#### Modes
+
+- `Normal mode`: The mode in which you can navigate through the file and perform actions like copying, pasting, and deleting text.
+- `Insert mode`: The mode in which you can insert text.
+- `Visual mode`: The mode in which you can select text.
+
+
 ### Installing from a URL
 
 Here is the command I ran `wget -r -np -nH --cut-dirs=3 -R "index.html*" https://release.archboot.com/aarch64/latest/`
@@ -116,3 +124,7 @@ Here is the command I ran `wget -r -np -nH --cut-dirs=3 -R "index.html*" https:/
 - `wget`: The non-interactive network downloader
 
 In all honesty, I don't think I needed to download everything from the url, I needed the ISO. but its a start!
+
+Yeah now that I am looking at it, this could have been done with:
+```bash
+wget https://release.archboot.com/aarch64/latest/iso/archboot-2024.04.30-17.10-6.8.7-1-aarch64-ARCH-aarch64.iso.sig
