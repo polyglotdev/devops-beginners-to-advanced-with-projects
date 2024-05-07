@@ -13,6 +13,8 @@
   - [Linux](#linux)
     - [Commands and File System](#commands-and-file-system)
     - [Where things live on the filesystem](#where-things-live-on-the-filesystem)
+    - [VIM Editor](#vim-editor)
+    - [Installing from a URL](#installing-from-a-url)
 
 ## What is DevOps?
 
@@ -75,3 +77,42 @@ Linus Torvalds released the Linux kernel in 1991. He developed the Linux kernel 
 - `/mnt`: Mount point for mounting a filesystem temporarily
 - `/opt`: Add-on application software packages
 - `/proc`: Virtual filesystem providing process and kernel information
+
+> `cat /etc/os-release` # Display the operating system name and version
+
+### VIM Editor
+
+- `i`: Insert mode
+- `Esc`: Normal mode
+- `:w`: Save
+- `:q`: Quit
+- `:wq`: Save and quit
+- `:q!`: Quit without saving
+- `dd`: Delete a line
+- `yy`: Copy a line
+- `p`: Paste a line
+- `u`: Undo
+- `Ctrl + r`: Redo
+- `:set number`: Show line numbers
+- `:set nonumber`: Hide line numbers
+- `:set autoindent`: Enable auto-indent
+- `:set noautoindent`: Disable auto-indent
+- `:set hlsearch`: Highlight search results
+- `:set nohlsearch`: Disable highlight search results
+- `:set ignorecase`: Ignore case when searching
+- `:set noignorecase`: Do not ignore case when searching
+- `:set incsearch`: Show search results incrementally
+
+### Installing from a URL
+
+Here is the command I ran `wget -r -np -nH --cut-dirs=3 -R "index.html*" https://release.archboot.com/aarch64/latest/`
+
+- `-r`: Turn on recursive retrieving
+- `-np`: Do not ever ascend to the parent directory
+- `-nH`: Disable generation of host-prefixed directories
+- `--cut-dirs=3`: Ignore 3 directory components
+- `-R "index.html*"`: Reject files matching the pattern
+- `https://release.archboot.com/aarch64/latest/`: URL to download
+- `wget`: The non-interactive network downloader
+
+In all honesty, I don't think I needed to download everything from the url, I needed the ISO. but its a start!
