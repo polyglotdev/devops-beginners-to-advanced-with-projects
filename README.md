@@ -9,6 +9,7 @@
   - [What is DevOps?](#what-is-devops)
   - [What is Continuous Integration?](#what-is-continuous-integration)
   - [What is Continuous Deployment?](#what-is-continuous-deployment)
+  - [Virtualization](#virtualization)
   - [Linux](#linux)
 
 ## What is DevOps?
@@ -23,6 +24,12 @@ Continuous Integration (CI) is a development practice that requires developers t
 
 Continuous Deployment is a software release process that uses automated testing to validate if changes are correct and if they meet quality criteria. It is the natural extension of Continuous Integration: an approach in which teams ensure that every change to the system is releasable.
 
+## Virtualization
+
+Virtualization is the process of creating a software-based, or virtual, representation of something, such as virtual applications, servers, storage, and networks. It is the single most effective way to reduce IT expenses while boosting efficiency and agility for all size businesses.
+
 ## Linux
 
 Linux is a family of open-source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in a Linux distribution.
+
+Linus Torvalds released the Linux kernel in 1991. He developed the Linux kernel on MINIX using the GNU C Compiler. He was inspired by MINIX, a Unix-like operating system based on a microkernel architecture.
