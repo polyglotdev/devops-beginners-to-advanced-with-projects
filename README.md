@@ -255,3 +255,17 @@ We can run `usermod` to add a user to a group and the `id` command to verify the
 [root@fedora-linux-38 etc]# id ansible
 uid=1002(ansible) gid=1002(ansible) groups=1002(ansible),1003(devops)
 ```
+
+> You can also add users in the `/etc/group` file manually, but it is not recommended.
+
+You can use the `passwd` command to change the password for a user:
+
+```bash
+[root@fedora-linux-38 etc]# passwd ansible
+Changing password for user ansible.
+New password:
+Retype new password:
+passwd: all authentication tokens updated successfully.
+```
+
+```bash
