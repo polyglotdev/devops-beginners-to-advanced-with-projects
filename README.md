@@ -30,6 +30,7 @@
     - [Symbolic Notation (`dr-xr-xr-x`)](#symbolic-notation-dr-xr-xr-x)
     - [Octal Notation](#octal-notation-1)
     - [Converting `dr-xr-xr-x` to Octal](#converting-dr-xr-xr-x-to-octal)
+  - [`sudo` Command](#sudo-command)
 
 ## What is DevOps?
 
@@ -394,3 +395,9 @@ In Unix and Unix-like systems, file permissions are depicted in both symbolic no
 Therefore, `dr-xr-xr-x` corresponds to the octal permissions `555`. Each `5` represents `r-x`, which you can confirm by adding up the values for each permission in the sets (Read + Execute).
 
 In summary, the octal notation comes from a method of summarizing the binary values of the permissions (where each permission is a binary flag) into more compact, base-8 digits, which is useful for quickly setting and understanding file permissions at a glance in command-line operations.
+
+## `sudo` Command
+
+The `sudo` command allows users to run programs with the security privileges of another user (by default, the superuser). It is used to execute a command as another user, typically the superuser.
+
+The `sudo` command is used to run a command with the security privileges of another user (by default, the superuser). It is typically used to perform administrative tasks that require root access.
