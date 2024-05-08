@@ -267,5 +267,3 @@ New password:
 Retype new password:
 passwd: all authentication tokens updated successfully.
 ```
-
-```bash
