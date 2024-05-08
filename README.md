@@ -276,3 +276,10 @@ COMMAND   PID USER   FD   TYPE DEVICE SIZE/OFF    NODE NAME
 systemd     1 root  cwd    DIR    8,1     4096       2 /
 systemd     1 root  rtd    DIR    8,1     4096       2 /
 ```
+
+`userdel` and `groupdel` commands can be used to delete a user and group respectively:
+
+```bash
+[root@fedora-linux-38 etc]# userdel ansible
+[root@fedora-linux-38 etc]# groupdel devops
+```
