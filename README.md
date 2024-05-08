@@ -17,6 +17,7 @@
       - [Modes](#modes)
     - [Installing from a URL](#installing-from-a-url)
     - [Linux File Types](#linux-file-types)
+  - [Commands](#commands)
 
 ## What is DevOps?
 
@@ -151,3 +152,31 @@ wget https://release.archboot.com/aarch64/latest/iso/archboot-2024.04.30-17.10-6
 [root@fedora-linux-38 /]# file /etc/passwd
 /etc/passwd: ASCII text
 ```
+
+## Commands
+
+- `grep`: Print lines matching a pattern
+  - `grep -i`: Ignore case
+  - `grep -v`: Invert match
+  - `grep -r`: Recursive search
+- `find`: Search for files in a directory hierarchy
+  - `find / -name file.txt`: Search for a file
+  - `find / -type d`: Search for a directory
+  - `find / -type f`: Search for a file
+  - `find / -user user1`: Search for files owned by a user
+  - `find / -size +1G`: Search for files greater than 1GB
+  - `find / -size -1G`: Search for files less than 1GB
+  - `find / -empty`: Search for empty files and directories
+  - `find / -mtime -1`: Search for files modified in the last 24 hours
+  - `find / -mtime +1`: Search for files modified more than 24 hours ago
+  - `find / -exec command {} \;`: Execute a command on the search results
+- `chmod`: Change file mode bits
+  - `chmod 777 file.txt`: Give all permissions to everyone
+  - `chmod 755 file.txt`: Give read, write, and execute permissions to the owner, and read and execute permissions to others
+  - `chmod 700 file.txt`: Give all permissions to the owner, and no permissions to others
+  - `chmod u+x file.txt`: Give execute permission to the owner
+  - `chmod g+w file.txt`: Give write permission to the group
+  - `chmod o-r file.txt`: Remove read permission from others
+- `chown`: Change file owner and group
+  - `chown user1 file.txt`: Change the owner of a file
+  - `chown user1:group1 file.txt`: Change the owner and group of a file
