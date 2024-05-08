@@ -228,3 +228,10 @@ Here is the groups output from `/etc/group` file:
 parallels:x:1000:
 domhallan:x:1001:
 ```
+
+The `id` command can be used to display the user and group information for the current user:
+
+```bash
+[root@fedora-linux-38 etc]# id domhallan
+uid=1001(domhallan) gid=1001(domhallan) groups=1001(domhallan),10(wheel)
+```
