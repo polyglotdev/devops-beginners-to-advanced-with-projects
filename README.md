@@ -241,3 +241,9 @@ The `useradd` command can be used to add a new user:
 ```bash
 [root@fedora-linux-38 etc]# useradd ansible
 ```
+
+The `groupadd` command can be used to add a new group:
+
+```bash
+[root@fedora-linux-38 etc]# groupadd devops
+```
