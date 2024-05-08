@@ -235,3 +235,9 @@ The `id` command can be used to display the user and group information for the c
 [root@fedora-linux-38 etc]# id domhallan
 uid=1001(domhallan) gid=1001(domhallan) groups=1001(domhallan),10(wheel)
 ```
+
+The `useradd` command can be used to add a new user:
+
+```bash
+[root@fedora-linux-38 etc]# useradd ansible
+```
