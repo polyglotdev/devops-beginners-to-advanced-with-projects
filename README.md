@@ -19,6 +19,7 @@
     - [Linux File Types](#linux-file-types)
   - [Commands](#commands)
   - [Users and Groups](#users-and-groups)
+    - [Types of Users](#types-of-users)
 
 ## What is DevOps?
 
@@ -187,3 +188,11 @@ wget https://release.archboot.com/aarch64/latest/iso/archboot-2024.04.30-17.10-6
 - Users and Groups are used to control access to the system and its resources.
 - Users login to the system and have unique usernames.
 - Every process has an owner and group affiliation.
+
+### Types of Users
+
+| User Type | Description | User ID (UID) | Group ID (GID) | Home Directory | Shell |
+| --- | --- | --- | --- | --- | --- |
+| Root | Superuser | 0 | 0 | /root | /bin/bash |
+| Regular | Normal user | 1000+ | 1000+ | /home/user1 | /bin/bash |
+|Service | ftp, apache, mysql | 100-999 | 100-999 | /var/www, /var/lib/mysql | /sbin/nologin |
