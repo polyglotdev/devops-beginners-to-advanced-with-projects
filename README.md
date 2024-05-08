@@ -191,8 +191,8 @@ wget https://release.archboot.com/aarch64/latest/iso/archboot-2024.04.30-17.10-6
 
 ### Types of Users
 
-| User Type | Description | User ID (UID) | Group ID (GID) | Home Directory | Shell |
-| --- | --- | --- | --- | --- | --- |
-| Root | Superuser | 0 | 0 | /root | /bin/bash |
-| Regular | Normal user | 1000+ | 1000+ | /home/user1 | /bin/bash |
-|Service | ftp, apache, mysql | 100-999 | 100-999 | /var/www, /var/lib/mysql | /sbin/nologin |
+| User Type | Description        | User ID (UID) | Group ID (GID) | Home Directory           | Shell         |
+|-----------|--------------------|---------------|----------------|--------------------------|---------------|
+| Root      | Superuser          | 0             | 0              | /root                    | /bin/bash     |
+| Regular   | Normal user        | 1000+         | 1000+          | /home/user1              | /bin/bash     |
+| Service   | ftp, apache, mysql | 100-999       | 100-999        | /var/www, /var/lib/mysql | /sbin/nologin |
