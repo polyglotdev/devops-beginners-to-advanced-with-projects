@@ -21,6 +21,7 @@
   - [Users and Groups](#users-and-groups)
     - [Types of Users](#types-of-users)
   - [How to read `/etc/passwd` file](#how-to-read-etcpasswd-file)
+  - [File Permissions](#file-permissions)
 
 ## What is DevOps?
 
@@ -282,4 +283,26 @@ systemd     1 root  rtd    DIR    8,1     4096       2 /
 ```bash
 [root@fedora-linux-38 etc]# userdel ansible
 [root@fedora-linux-38 etc]# groupdel devops
+```
+
+## File Permissions
+
+- `r`: Read
+- `w`: Write
+- `x`: Execute
+- `-`: No permission
+- `d`: Directory
+- `l`: Symbolic link
+- `s`: Setuid or Setgid
+- `t`: Sticky bit
+
+Here is an example of file permissions:
+
+```bash
+[root@fedora-linux-38 /]# ls -l
+total 28
+dr-xr-xr-x.   1 root root    0 Jan 23 19:00 afs
+lrwxrwxrwx.   1 root root    7 Jan 23 19:00 bin -> usr/bin
+dr-xr-xr-x.   9 root root 4096 May  7 14:51 boot
+lrwxrwxrwx.   1 root root   37 May  7 15:40 cmds -> /opt/dev/ops/devops/test/commands.txt
 ```
