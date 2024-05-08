@@ -16,6 +16,7 @@
     - [VIM Editor](#vim-editor)
       - [Modes](#modes)
     - [Installing from a URL](#installing-from-a-url)
+    - [Linux File Types](#linux-file-types)
 
 ## What is DevOps?
 
@@ -128,3 +129,25 @@ In all honesty, I don't think I needed to download everything from the url, I ne
 Yeah now that I am looking at it, this could have been done with:
 ```bash
 wget https://release.archboot.com/aarch64/latest/iso/archboot-2024.04.30-17.10-6.8.7-1-aarch64-ARCH-aarch64.iso.sig
+```
+
+### Linux File Types
+
+- `-`: Regular file
+- `d`: Directory
+- `l`: Symbolic link
+- `c`: Character device file
+- `b`: Block device file
+- `s`: Socket file
+- `p`: Named pipe
+- `D`: Door
+- `n`: Network file
+- `?`: Other file
+- `!`: Doors
+
+> you can use `file` command to determine the file type
+
+```bash
+[root@fedora-linux-38 /]# file /etc/passwd
+/etc/passwd: ASCII text
+```
