@@ -247,3 +247,11 @@ The `groupadd` command can be used to add a new group:
 ```bash
 [root@fedora-linux-38 etc]# groupadd devops
 ```
+
+We can run `usermod` to add a user to a group and the `id` command to verify the changes:
+
+```bash
+[root@fedora-linux-38 etc]# usermod -aG devops ansible
+[root@fedora-linux-38 etc]# id ansible
+uid=1002(ansible) gid=1002(ansible) groups=1002(ansible),1003(devops)
+```
