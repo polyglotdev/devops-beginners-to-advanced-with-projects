@@ -267,3 +267,12 @@ New password:
 Retype new password:
 passwd: all authentication tokens updated successfully.
 ```
+
+`lsof -u user1` command can be used to list all open files for a user:
+
+```bash
+[root@fedora-linux-38 etc]# lsof -u domhallan
+COMMAND   PID USER   FD   TYPE DEVICE SIZE/OFF    NODE NAME
+systemd     1 root  cwd    DIR    8,1     4096       2 /
+systemd     1 root  rtd    DIR    8,1     4096       2 /
+```
