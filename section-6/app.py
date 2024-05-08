@@ -17,3 +17,13 @@ def print_list(list):
 
 
 print(print_list(my_list))
+
+nba_players = {
+    'Stephen Curry': 30,
+    'Kevin Durant': 35,
+    'Lebron James': 23,
+    'Kawhi Leonard': 2
+}
+
+for player, number in nba_players.items():
+    print(f'{player} wears number {number}')

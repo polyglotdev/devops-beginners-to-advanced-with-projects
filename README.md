@@ -31,6 +31,13 @@
     - [Octal Notation](#octal-notation-1)
     - [Converting `dr-xr-xr-x` to Octal](#converting-dr-xr-xr-x-to-octal)
   - [`sudo` Command](#sudo-command)
+  - [Computer networking](#computer-networking)
+    - [ISO](#iso)
+    - [OSI Model](#osi-model)
+    - [TCP/IP](#tcpip)
+    - [IP Address](#ip-address)
+  - [Protocols and Ports](#protocols-and-ports)
+  - [Networking commands](#networking-commands)
 
 ## What is DevOps?
 
@@ -447,3 +454,77 @@ The last ALL is the commands this rule applies to. Yet again, it's all commands.
 This is a very permissive rule. In a real-world scenario, you'd likely want to limit the commands a user can run with sudo, the users they can run commands as, or the hosts they can run commands on.
 
 Please note that editing the sudoers file directly can be risky. If you make a mistake, you could lock yourself out of your system. It's generally recommended to use the visudo command to edit the sudoers file, as it includes syntax checking to prevent you from saving a file with errors.
+
+## Computer networking
+
+### ISO
+
+- **ISO (International Organization for Standardization)** is a worldwide federation of national standards bodies. The work of preparing International Standards is normally carried out through ISO technical committees.
+- **ISO 27001** is a specification for an information security management system (ISMS). An ISMS is a framework of policies and procedures that includes all legal, physical, and technical controls involved in an organization's information risk management processes.
+- **ISO 9001** is a standard that sets out the criteria for a quality management system. It can be used by any organization, large or small, regardless of its field of activity. In fact, there are over one million companies and organizations in over 170 countries certified to ISO 9001.
+- **ISO 14001** is an internationally agreed standard that sets out the requirements for an environmental management system. It helps organizations improve their environmental performance through more efficient use of resources and reduction of waste, gaining a competitive advantage and the trust of stakeholders.
+- **ISO 3166** is a standard published by the International Organization for Standardization (ISO) that defines codes for the names of countries, dependent territories, and special areas of geographical interest. The official name of the standard is Codes for the representation of names of countries and their subdivisions.
+
+### OSI Model
+
+- **OSI (Open Systems Interconnection)** is a conceptual framework that standardizes the functions of a telecommunication or computing system into seven abstraction layers.
+- **OSI Model Layers**:
+  - **Layer 1 (Physical)**: Deals with physical connections and transmission of signals.
+  - **Layer 2 (Data Link)**: Provides error detection and correction.
+  - **Layer 3 (Network)**: Handles routing and forwarding of data packets.
+  - **Layer 4 (Transport)**: Manages end-to-end connections and reliability.
+  - **Layer 5 (Session)**: Establishes, maintains, and terminates connections.
+  - **Layer 6 (Presentation)**: Translates data into a compatible format.
+  - **Layer 7 (Application)**: Provides user interfaces and network services.
+
+### TCP/IP
+
+- **TCP/IP (Transmission Control Protocol/Internet Protocol)** is a suite of communication protocols used to interconnect network devices on the internet.
+- **TCP (Transmission Control Protocol)**: Provides reliable, ordered, and error-checked delivery of a stream of packets on the internet.
+- **IP (Internet Protocol)**: Routes packets across multiple networks.
+- **TCP/IP Model Layers**:
+  - **Application Layer**: Provides network services directly to end-users.
+  - **Transport Layer**: Manages end-to-end communication and data reliability.
+  - **Internet Layer**: Routes data packets to their destination.
+  - **Link Layer**: Handles physical connections and data framing.
+
+### IP Address
+
+- **IP (Internet Protocol)** address is a unique numerical label assigned to each device connected to a computer network that uses the IP for communication.
+- **IPv4 (Internet Protocol version 4)**: Uses a 32-bit address scheme allowing for a total of 2^32 addresses.
+- **IPv6 (Internet Protocol version 6)**: Uses a 128-bit address scheme allowing for a total of 2^128 addresses.
+- **Public IP Address**: Identifies a device on the internet.
+- **Private IP Address**: Identifies a device on a local network.
+- **Static IP Address**: Does not change and is manually configured.
+- **Dynamic IP Address**: Changes and is automatically assigned.
+
+## Protocols and Ports
+
+- **HTTP (Hypertext Transfer Protocol)**: Used for transmitting web pages over the internet. Default port is 80.
+- **HTTPS (Hypertext Transfer Protocol Secure)**: Secure version of HTTP. Default port is 443.
+- **FTP (File Transfer Protocol)**: Used for transferring files between a client and server. Default ports are 20 (data) and 21 (control).
+- **SSH (Secure Shell)**: Used for secure remote access to a computer. Default port is 22.
+- **SMTP (Simple Mail Transfer Protocol)**: Used for sending email. Default port is 25.
+- **POP3 (Post Office Protocol version 3)**: Used for retrieving email. Default port is 110.
+- **IMAP (Internet Message Access Protocol)**: Used for retrieving email. Default port is 143.
+- **DNS (Domain Name System)**: Used for translating domain names to IP addresses. Default port is 53.
+- **DHCP (Dynamic Host Configuration Protocol)**: Used for automatically assigning IP addresses to devices. Default port is 67.
+- **SNMP (Simple Network Management Protocol)**: Used for managing network devices. Default port is 161.
+- **RDP (Remote Desktop Protocol)**: Used for remote desktop access. Default port is 3389.
+- **NTP (Network Time Protocol)**: Used for synchronizing system clocks. Default port is 123.
+
+## Networking commands
+
+- `ifconfig`: Configure a network interface
+- `ping`: Send ICMP ECHO_REQUEST to network hosts
+- `traceroute`: Print the route packets take to network host
+- `netstat`: Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
+- `nslookup`: Query Internet name servers interactively
+- `dig`: DNS lookup utility
+- `host`: DNS lookup utility
+- `route`: Show / manipulate the IP routing table
+- `arp`: Manipulate the system ARP cache
+- `ss`: Utility to investigate sockets
+- `telnet`: User interface to the TELNET protocol
+- `ftp`: Internet file transfer program
+- `scp`: Secure copy (remote file copy program)
