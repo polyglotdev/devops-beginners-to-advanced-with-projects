@@ -20,6 +20,7 @@
   - [Commands](#commands)
   - [Users and Groups](#users-and-groups)
     - [Types of Users](#types-of-users)
+  - [How to read `/etc/passwd` file](#how-to-read-etcpasswd-file)
 
 ## What is DevOps?
 
@@ -195,4 +196,35 @@ wget https://release.archboot.com/aarch64/latest/iso/archboot-2024.04.30-17.10-6
 |-----------|--------------------|---------------|----------------|--------------------------|---------------|
 | Root      | Superuser          | 0             | 0              | /root                    | /bin/bash     |
 | Regular   | Normal user        | 1000+         | 1000+          | /home/user1              | /bin/bash     |
-| Service   | ftp, apache, mysql | 100-999       | 100-999        | /var/www, /var/lib/mysql | /sbin/nologin |
+| Service   | ftp, apache, mysql | 1-999         | 1-999          | /var/www, /var/lib/mysql | /sbin/nologin |
+
+## How to read `/etc/passwd` file
+
+Here is a sample `/etc/passwd` file:
+
+```bash
+root:x:0:0:Super User:/root:/bin/bash
+bin:x:1:1:bin:/bin:/usr/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/usr/sbin/nologin
+adm:x:3:4:adm:/var/adm:/usr/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/usr/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/usr/sbin/nologin
+```
+
+- `root`: Username
+- `x`: Password placeholder
+- `0`: User ID (UID)
+- `0`: Group ID (GID)
+- `Super User`: User description
+- `/root`: Home directory
+- `/bin/bash`: Shell
+
+Here is the groups output from `/etc/group` file:
+
+```bash
+parallels:x:1000:
+domhallan:x:1001:
+```
