@@ -18,6 +18,7 @@
     - [Installing from a URL](#installing-from-a-url)
     - [Linux File Types](#linux-file-types)
   - [Commands](#commands)
+  - [Users and Groups](#users-and-groups)
 
 ## What is DevOps?
 
@@ -180,3 +181,9 @@ wget https://release.archboot.com/aarch64/latest/iso/archboot-2024.04.30-17.10-6
 - `chown`: Change file owner and group
   - `chown user1 file.txt`: Change the owner of a file
   - `chown user1:group1 file.txt`: Change the owner and group of a file
+
+## Users and Groups
+
+- Users and Groups are used to control access to the system and its resources.
+- Users login to the system and have unique usernames.
+- Every process has an owner and group affiliation.
