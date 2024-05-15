@@ -629,4 +629,3 @@ These IP addresses are designed to be used in closed networks and are not routab
 - **Load Balancers**: Load balancers distribute incoming application traffic across multiple targets, such as EC2 instances, to ensure optimal performance and availability.
 - **Auto Scaling**: Auto Scaling automatically adjusts the number of EC2 instances in a group based on demand or a predefined schedule. It helps maintain application availability and reduce costs.
 - **CloudWatch**: CloudWatch is a monitoring and observability service that provides data and insights to monitor your applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health.
--
