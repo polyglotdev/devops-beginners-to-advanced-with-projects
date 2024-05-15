@@ -45,6 +45,8 @@
     - [Use of Private IP Addresses](#use-of-private-ip-addresses)
   - [Docker](#docker)
   - [Microservices](#microservices)
+  - [AWS Part 1](#aws-part-1)
+  - [EC2](#ec2)
 
 ## What is DevOps?
 
@@ -591,3 +593,40 @@ These IP addresses are designed to be used in closed networks and are not routab
   - Monitoring: Monitoring and debugging services can be complex.
   - Security: Securing microservices architecture.
   - Communication: Services need to communicate effectively.
+
+## AWS Part 1
+
+- **AWS (Amazon Web Services)** is a cloud computing platform that offers a wide range of services, including computing power, storage, databases, machine learning, and more.
+- **EC2 (Elastic Compute Cloud)**: Provides scalable computing capacity in the cloud.
+- **S3 (Simple Storage Service)**: Object storage service for storing and retrieving data.
+- **RDS (Relational Database Service)**: Managed relational database service.
+- **IAM (Identity and Access Management)**: Service for managing user access to AWS resources.
+- **VPC (Virtual Private Cloud)**: Service for creating isolated virtual networks.
+- **Route 53**: DNS web service.
+- **CloudWatch**: Monitoring and observability service.
+- **Elastic Beanstalk**: Platform as a service (PaaS) for deploying and managing applications.
+- **Lambda**: Serverless computing service.
+- **SNS (Simple Notification Service)**: Pub/sub messaging service.
+- **SQS (Simple Queue Service)**: Message queuing service.
+- **DynamoDB**: NoSQL database service.
+- **EKS (Elastic Kubernetes Service)**: Managed Kubernetes service.
+- **EFS (Elastic File System)**: Scalable file storage service.
+
+## EC2
+
+- **EC2 (Elastic Compute Cloud)** is a web service that provides resizable compute capacity in the cloud. It allows users to launch virtual servers, known as instances, and scale capacity up or down as needed.
+- **Instance Types**: EC2 instances come in various types optimized for different use cases, such as general-purpose, compute-optimized, memory-optimized, storage-optimized, and more.
+- **AMI (Amazon Machine Image)**: An AMI is a template that contains the software configuration (operating system, application server, and applications) required to launch an EC2 instance.
+- **Security Groups**: Security groups act as a virtual firewall that controls inbound and outbound traffic to an EC2 instance.
+- **Key Pairs**: Key pairs are used to securely connect to an EC2 instance using SSH. The private key is used to log in to the instance, while the public key is stored on the instance.
+- **EBS (Elastic Block Store)**: EBS provides persistent block storage volumes for EC2 instances. It allows you to create volumes that can be attached to instances for data storage.
+- **Elastic IP**: An Elastic IP is a static IPv4 address that can be associated with an EC2 instance. It allows you to mask the failure of an instance by rapidly remapping the address to another instance in your account.
+- **Instance Metadata**: Instance metadata is data about your instance that you can use to configure or manage the running instance. It includes information such as the instance type, public IP address, security groups, and more.
+- **Instance Store**: Instance store volumes are temporary block storage volumes that are physically attached to the host computer. They provide temporary storage for data that is deleted when the instance is stopped or terminated.
+- **Placement Groups**: Placement groups are logical groupings of instances within a single Availability Zone. They are used to influence the placement of instances to meet specific requirements, such as low latency or high network throughput.
+- **Spot Instances**: Spot instances allow you to bid on unused EC2 capacity at a discounted price. They are ideal for workloads that are flexible in terms of when they run and can be interrupted.
+- **Reserved Instances**: Reserved instances provide a significant discount (up to 75%) compared to on-demand instances in exchange for a commitment to use the instance for a one- or three-year term.
+- **Load Balancers**: Load balancers distribute incoming application traffic across multiple targets, such as EC2 instances, to ensure optimal performance and availability.
+- **Auto Scaling**: Auto Scaling automatically adjusts the number of EC2 instances in a group based on demand or a predefined schedule. It helps maintain application availability and reduce costs.
+- **CloudWatch**: CloudWatch is a monitoring and observability service that provides data and insights to monitor your applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health.
+-
