@@ -288,3 +288,4 @@ terraform.rc
 
 **/*.terraform/*
 .ddc-material-master/*
+**/.vagrant/*
