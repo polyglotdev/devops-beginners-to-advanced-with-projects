@@ -215,7 +215,7 @@ wget https://release.archboot.com/aarch64/latest/iso/archboot-2024.04.30-17.10-6
 ### Types of Users
 
 | User Type | Description        | User ID (UID) | Group ID (GID) | Home Directory           | Shell         |
-|-----------|--------------------|---------------|----------------|--------------------------|---------------|
+| --------- | ------------------ | ------------- | -------------- | ------------------------ | ------------- |
 | Root      | Superuser          | 0             | 0              | /root                    | /bin/bash     |
 | Regular   | Normal user        | 1000+         | 1000+          | /home/user1              | /bin/bash     |
 | Service   | ftp, apache, mysql | 1-999         | 1-999          | /var/www, /var/lib/mysql | /sbin/nologin |
@@ -343,16 +343,16 @@ In the first line of the output, the permissions are `dr-xr-xr-x`. Here is the b
 
 ### Permissions Breakdown
 
-|Octal  |Symbol |Permission
-|-------|-------|----------|
-`0` | `---`| No permissions|
-`1` | `--x`| Execute|
-`2` | `-w-`| Write|
-`3` | `-wx`| Write and execute|
-`4` | `r--`| Read|
-`5` | `r-x`| Read and execute|
-`6` | `rw-`| Read and write|
-`7` | `rwx`| Read, write and execute|
+| Octal | Symbol | Permission              |
+| ----- | ------ | ----------------------- |
+| `0`   | `---`  | No permissions          |
+| `1`   | `--x`  | Execute                 |
+| `2`   | `-w-`  | Write                   |
+| `3`   | `-wx`  | Write and execute       |
+| `4`   | `r--`  | Read                    |
+| `5`   | `r-x`  | Read and execute        |
+| `6`   | `rw-`  | Read and write          |
+| `7`   | `rwx`  | Read, write and execute |
 
 
 ### Octal Notation
@@ -543,19 +543,23 @@ Class C: 192.168.0.0 - 192.168.255.255
 These private IP address ranges fall into different classes based on their potential network size and distribution, designated as Class A, Class B, and Class C. Here’s a breakdown of each class as per your list:
 
 ### Class A: 10.0.0.0 - 10.255.255.255
+
 - **Range**: `10.0.0.0` to `10.255.255.255`
 - This Class A range allows for a very large number of addresses (16,777,216 addresses to be exact). It’s ideal for very large organizations with many devices that need IP addresses.
 - Typically, all devices within this range can communicate with each other within the same network without using the public internet.
 
 ### Class B: 172.16.0.0 - 172.31.255.255
+
 - **Range**: `172.16.0.0` to `172.31.255.255`
 - This Class B range includes 16 contiguous Class B networks, each of which can support up to 65,536 addresses (for a total of 1,048,576 addresses across all 16 networks).
 - It’s suitable for medium to large-sized networks.
 
 ### Class C: 192.168.0.0 - 192.168.255.255
+
 - **Range**: `192.168.0.0` to `192.168.255.255`
 - This Class C range encompasses 256 networks, each of which can handle up to 256 addresses (65,536 addresses in total across all networks).
 - It is commonly used in smaller networks, such as residential or small business networks.
 
 ### Use of Private IP Addresses
+
 These IP addresses are designed to be used in closed networks and are not routable on the public internet, meaning they can't directly send or receive data from internet devices without being translated to a public IP address via NAT. This setup helps alleviate the demand on the limited number of available public IP addresses and also adds an extra layer of security by isolating the internal network from external traffic.
