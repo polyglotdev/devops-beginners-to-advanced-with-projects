@@ -47,6 +47,10 @@
   - [Microservices](#microservices)
   - [AWS Part 1](#aws-part-1)
   - [EC2](#ec2)
+  - [What you need for an EC2 instance](#what-you-need-for-an-ec2-instance)
+  - [What you need for an EC2 instance](#what-you-need-for-an-ec2-instance-1)
+  - [EBS (Elastic Block Store)](#ebs-elastic-block-store)
+  - [CloudWatch](#cloudwatch)
 
 ## What is DevOps?
 
@@ -629,3 +633,36 @@ These IP addresses are designed to be used in closed networks and are not routab
 - **Load Balancers**: Load balancers distribute incoming application traffic across multiple targets, such as EC2 instances, to ensure optimal performance and availability.
 - **Auto Scaling**: Auto Scaling automatically adjusts the number of EC2 instances in a group based on demand or a predefined schedule. It helps maintain application availability and reduce costs.
 - **CloudWatch**: CloudWatch is a monitoring and observability service that provides data and insights to monitor your applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health.
+
+## [What you need for an EC2 instance](#what-you-need-for-an-ec2-instance)
+
+## What you need for an EC2 instance
+
+1. VPC
+2. Subnet
+3. Security Group
+4. Key Pair
+5. IAM Role
+6. AMI
+7. Instance Type
+8. EBS Volume
+9. Elastic IP
+
+## EBS (Elastic Block Store)
+
+- **EBS (Elastic Block Store)** provides persistent block storage volumes for use with Amazon EC2 instances. It allows you to create volumes that can be attached to instances for data storage.
+- Runs EC2, stores data and file data
+- Placed in a specific availability zone, automatically replicated within that zone
+- **Types of EBS Volumes:**
+  - **General Purpose SSD (gp3)**: Balances price and performance for a wide variety of workloads.
+  - **Provisioned IOPS SSD (io2)**: Designed for I/O-intensive workloads requiring low latency and consistent performance.
+  - **Throughput Optimized HDD (st1)**: Ideal for frequently accessed, throughput-intensive workloads.
+  - **Cold HDD (sc1)**: Ideal for less frequently accessed workloads.
+  - **Magnetic (standard)**: Lowest cost per gigabyte, ideal for infrequently accessed data.
+
+## CloudWatch
+
+- **CloudWatch** is a monitoring and observability service that provides data and insights to monitor your applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health.
+- **CloudWatch Metrics**: Monitor performance metrics in real-time, such as CPU utilization, network traffic, and disk I/O.
+- **CloudWatch Alarms**: Set alarms to automatically take actions based on predefined thresholds.
+- **CloudWatch Logs**: Collect and monitor log files from EC2 instances, AWS CloudTrail, and other sources.
