@@ -48,6 +48,7 @@
   - [AWS Part 1](#aws-part-1)
   - [EC2](#ec2)
   - [What you need for an EC2 instance](#what-you-need-for-an-ec2-instance)
+  - [What you need for an EC2 instance](#what-you-need-for-an-ec2-instance-1)
   - [EBS (Elastic Block Store)](#ebs-elastic-block-store)
 
 ## What is DevOps?
@@ -634,6 +635,8 @@ These IP addresses are designed to be used in closed networks and are not routab
 
 ## [What you need for an EC2 instance](#what-you-need-for-an-ec2-instance)
 
+## What you need for an EC2 instance
+
 1. VPC
 2. Subnet
 3. Security Group
@@ -647,11 +650,11 @@ These IP addresses are designed to be used in closed networks and are not routab
 ## EBS (Elastic Block Store)
 
 - **EBS (Elastic Block Store)** provides persistent block storage volumes for use with Amazon EC2 instances. It allows you to create volumes that can be attached to instances for data storage.
-- Runs EC2, store data and file data
-- Placed in specific availability zone Automatically replicated within that zone
-- **Types of EBS Volumes**:
-  - **General Purpose SSD (gp2)**: Provides a balance of price and performance for a wide variety of workloads.
-  - **Provisioned IOPS SSD (io1)**: Designed for I/O-intensive workloads, such as databases, that require low latency and consistent performance.
-  - **Throughput Optimized HDD (st1)**: Provides low-cost magnetic storage that is ideal for frequently accessed, throughput-intensive workloads.
-  - **Cold HDD (sc1)**: Provides low-cost magnetic storage that is ideal for less frequently accessed workloads.
-  - **Magnetic (standard)**: Provides the lowest cost per gigabyte of all EBS volume types and is ideal for workloads where data is accessed infrequently.
+- Runs EC2, stores data and file data
+- Placed in a specific availability zone, automatically replicated within that zone
+- **Types of EBS Volumes:**
+  - **General Purpose SSD (gp3)**: Balances price and performance for a wide variety of workloads.
+  - **Provisioned IOPS SSD (io2)**: Designed for I/O-intensive workloads requiring low latency and consistent performance.
+  - **Throughput Optimized HDD (st1)**: Ideal for frequently accessed, throughput-intensive workloads.
+  - **Cold HDD (sc1)**: Ideal for less frequently accessed workloads.
+  - **Magnetic (standard)**: Lowest cost per gigabyte, ideal for infrequently accessed data.
