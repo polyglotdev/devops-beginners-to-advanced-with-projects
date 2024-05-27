@@ -47,6 +47,8 @@
   - [Microservices](#microservices)
   - [AWS Part 1](#aws-part-1)
   - [EC2](#ec2)
+  - [What you need for a EC2 instance](#what-you-need-for-a-ec2-instance)
+  - [EBS (Elastic Block Store)](#ebs-elastic-block-store)
 
 ## What is DevOps?
 
@@ -629,3 +631,27 @@ These IP addresses are designed to be used in closed networks and are not routab
 - **Load Balancers**: Load balancers distribute incoming application traffic across multiple targets, such as EC2 instances, to ensure optimal performance and availability.
 - **Auto Scaling**: Auto Scaling automatically adjusts the number of EC2 instances in a group based on demand or a predefined schedule. It helps maintain application availability and reduce costs.
 - **CloudWatch**: CloudWatch is a monitoring and observability service that provides data and insights to monitor your applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health.
+
+## What you need for a EC2 instance
+
+1. VPC
+2. Subnet
+3. Security Group
+4. Key Pair
+5. IAM Role
+6. AMI
+7. Instance Type
+8. EBS Volume
+9. Elastic IP
+
+## EBS (Elastic Block Store)
+
+- **EBS (Elastic Block Store)** provides persistent block storage volumes for use with Amazon EC2 instances. It allows you to create volumes that can be attached to instances for data storage.
+- Runs EC2, store data and file data
+- Placed in specific availability zone Automatically replicated within that zone
+- **Types of EBS Volumes**:
+  - **General Purpose SSD (gp2)**: Provides a balance of price and performance for a wide variety of workloads.
+  - **Provisioned IOPS SSD (io1)**: Designed for I/O-intensive workloads, such as databases, that require low latency and consistent performance.
+  - **Throughput Optimized HDD (st1)**: Provides low-cost magnetic storage that is ideal for frequently accessed, throughput-intensive workloads.
+  - **Cold HDD (sc1)**: Provides low-cost magnetic storage that is ideal for less frequently accessed workloads.
+  - **Magnetic (standard)**: Provides the lowest cost per gigabyte of all EBS volume types and is ideal for workloads where data is accessed infrequently.
