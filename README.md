@@ -47,7 +47,7 @@
   - [Microservices](#microservices)
   - [AWS Part 1](#aws-part-1)
   - [EC2](#ec2)
-  - [What you need for a EC2 instance](#what-you-need-for-a-ec2-instance)
+  - [What you need for an EC2 instance](#what-you-need-for-an-ec2-instance)
   - [EBS (Elastic Block Store)](#ebs-elastic-block-store)
 
 ## What is DevOps?
@@ -632,7 +632,7 @@ These IP addresses are designed to be used in closed networks and are not routab
 - **Auto Scaling**: Auto Scaling automatically adjusts the number of EC2 instances in a group based on demand or a predefined schedule. It helps maintain application availability and reduce costs.
 - **CloudWatch**: CloudWatch is a monitoring and observability service that provides data and insights to monitor your applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health.
 
-## What you need for a EC2 instance
+## [What you need for an EC2 instance](#what-you-need-for-an-ec2-instance)
 
 1. VPC
 2. Subnet
